@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // wap to calculate electricity bill based on different units.
+
+        // 1 to 20 - 1rs/unit
+        // 21 to 50 - 1.5rs/unit
+        // 51 to 100 - 2rs/unit
+        // 101 to 150 - 2.5rs/unit
+        // 150 above - 5rs/unit
+
+        const units = 170;
+        let total = 0;
+
+
+        if (units >= 1 && units <= 20) {
+            total = units * 1;
+            console.log("Your bill is", total);
+        }
+        else if (units >= 21 && units <= 50) {
+            total = 20 + (units - 20) * 1.5;
+            console.log("Your bill is", total);
+        }
+        else if (units >= 51 && units <= 100) {
+            total = 20 + 45 + (units - 50) * 2;
+            console.log("Your bill is", total);
+        }
+        else if (units >= 101 && units <= 150) {
+            total = 20 + 45 + 100 + (units - 100) * 2.5;
+            console.log("Your bill is", total);
+        }
+        else if (units >= 150) {
+            total = 20 + 45 + 100 + 125 + (units - 150) * 5;
+            console.log("Your bill is", total);
+        }
+    </script>
+</body>
+
+</html>
