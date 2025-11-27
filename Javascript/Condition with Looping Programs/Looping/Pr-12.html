@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // WAP to count digits of a number using while loop, do…while loop, for loop.
+
+        //while loop
+
+        // let i = 1;
+        // let count = 0;
+        // let num = 2435;
+
+        // while (num > 0) {
+        //     num = Math.floor(num / 10);
+        //     count++;
+        //     i++;
+        // }
+
+        // console.log("Count digits of number =", count);
+
+        //do while loop
+
+        let i = 1;
+        let count = 0;
+        let num = 243522;
+
+        do {
+            num = Math.floor(num / 10);
+            count++;
+            i++;
+        } while (num > 0);
+
+        console.log("Count digits of number =", count);
+
+    </script>
+</body>
+
+</html>
